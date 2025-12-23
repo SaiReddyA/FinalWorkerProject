@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/FinalWorkConnectProject/.vs
+/FinalWorkConnectProject/FinalWorkConnectProject/obj
+/FinalWorkConnectProject/FinalWorkConnectProject/Properties
