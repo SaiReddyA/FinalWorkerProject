@@ -1,19 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FinalWorkConnectProject.Domain.Entities;
-using FinalWorkConnectProject.Domain.Interface;
-
-namespace FinalWorkConnectProject.Infrastructure.Repository
+﻿namespace FinalWorkConnectProject.Infrastructure.Repository
 {
-    public class AuthRepository: IAuthRepository
+    /// <summary>
+    /// Handles authentication-related database operations
+    /// </summary>
+    public class AuthRepository : IAuthRepository
     {
-        
-        Task<User> IAuthRepository.LoginDetails()
+        private readonly DapperContext _context;
+
+        public AuthRepository(DapperContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+
+        /// <summary>
+        /// Validates user credentials against the database
+        /// </summary>
+        public async Task<User?> LoginAsync(string email, string password)
+        {
+            const string query = @"
+                SELECT UserId, UserName, Email, Password, MobileNo, Location FROM Users
+                WHERE Email = @Email AND Password = @Password";
+
+            using IDbConnection connection = _context.CreateConnection();
+
+            return await connection.QueryFirstOrDefaultAsync<User>(
+                query,
+                new { Email = email, Password = password }
+            );
         }
     }
 }

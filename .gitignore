@@ -5,8 +5,10 @@
 /.vs
 /FinalWorkConnectProject/.vs
 /FinalWorkConnectProject/FinalWorkConnectProject/obj
-/FinalWorkConnectProject/FinalWorkConnectProject/Properties
 /FinalWorkConnectProject/FinalworkConnectProject.Application/obj
 /FinalWorkConnectProject/FinalWorkConnectProject.Domain/obj
 /FinalWorkConnectProject/FinalWorkConnectProject.Infrastructure/obj
-/FinalWorkConnectProject
+/FinalWorkConnectProject/FinalWorkConnectProject/bin/Debug/net8.0
+/FinalWorkConnectProject/FinalworkConnectProject.Application/bin/Debug/net8.0
+/FinalWorkConnectProject/FinalWorkConnectProject.Domain/bin/Debug/net8.0
+/FinalWorkConnectProject/FinalWorkConnectProject.Infrastructure/bin/Debug/net8.0

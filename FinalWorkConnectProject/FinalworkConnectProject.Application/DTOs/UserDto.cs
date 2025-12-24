@@ -1,9 +1,9 @@
-﻿namespace FinalWorkConnectProject.Domain.Entities
+﻿namespace FinalWorkConnectProject.Application.DTOs
 {
     /// <summary>
-    /// Represents a user within the system domain
+    /// Data Transfer Object representing user information
     /// </summary>
-    public class User
+    public class UserDto
     {
         /// <summary>
         /// Unique identifier of the user
@@ -16,17 +16,9 @@
         public string UserName { get; set; } = string.Empty;
 
         /// <summary>
-        /// Email address associated with the user
+        /// Email address of the user
         /// </summary>
         public string Email { get; set; } = string.Empty;
-
-        /// <summary>
-        /// Encrypted or hashed password of the user
-        /// </summary>
-        /// <remarks>
-        /// This value should never be exposed outside the domain or infrastructure layers.
-        /// </remarks>
-        public string Password { get; set; } = string.Empty;
 
         /// <summary>
         /// Mobile phone number of the user

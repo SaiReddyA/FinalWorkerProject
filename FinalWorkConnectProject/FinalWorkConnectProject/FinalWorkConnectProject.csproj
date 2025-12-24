@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinalworkConnectProject.Application\FinalWorkConnectProject.Application.csproj" />
+    <ProjectReference Include="..\FinalWorkConnectProject.Domain\FinalWorkConnectProject.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

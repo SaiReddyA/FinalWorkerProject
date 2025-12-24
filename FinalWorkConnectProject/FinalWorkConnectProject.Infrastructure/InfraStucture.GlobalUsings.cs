@@ -1,0 +1,14 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using FinalWorkConnectProject.Domain.Entities;
+global using FinalWorkConnectProject.Domain.Interface;
+global using Dapper;
+global using Microsoft.Data.SqlClient;
+global using System.Data;
+global using Microsoft.Extensions.Configuration;
+global using FinalWorkConnectProject.Infrastructure.Data;
+global using FinalWorkConnectProject.Infrastructure.Repository;
+global using Microsoft.Extensions.DependencyInjection;

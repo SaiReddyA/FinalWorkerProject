@@ -1,23 +1,18 @@
 ﻿using FinalWorkConnectProject.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinalWorkConnectProject.Domain.Interface
 {
     /// <summary>
-    /// Authentication login details
+    /// Defines authentication-related data access operations
     /// </summary>
     public interface IAuthRepository
     {
         /// <summary>
-        /// it validate the user
+        /// Validates user credentials
         /// </summary>
-        /// <returns> the user data </returns>
-        /// <see cref= "User">
-        Task<User> LoginDetails();
-      
+        /// <param name="email">User email</param>
+        /// <param name="password">User password</param>
+        /// <returns>Authenticated user or null</returns>
+        Task<User?> LoginAsync(string email, string password);
     }
 }

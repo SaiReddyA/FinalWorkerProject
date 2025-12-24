@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FinalWorkConnectProject.Application.DTOs
+﻿namespace FinalWorkConnectProject.Application.DTOs
 {
     /// <summary>
-    /// Authentication response
+    /// Represents the authentication response returned after successful login
     /// </summary>
     public class AuthResponseDTO
     {
+        /// <summary>
+        /// JSON Web Token (JWT) used for authenticating subsequent API requests
+        /// </summary>
         public string Token { get; set; } = string.Empty;
-        public DateTime Expiry { get; set; }
 
+        /// <summary>
+        /// Date and time when the authentication token expires
+        /// </summary>
+        public DateTime Expiry { get; set; }
     }
 }

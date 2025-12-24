@@ -1,0 +1,13 @@
+﻿global using FinalWorkConnectProject.Application.DTOs;
+global using FinalWorkConnectProject.Application.Interfaces;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using FinalWorkConnectProject.Domain.Interface;
+global using FinalWorkConnectProject.Application.Services;
+global using Microsoft.Extensions.DependencyInjection;
+global using AutoMapper;
+global using FinalWorkConnectProject.Domain.Entities;
+global using System.Reflection;
